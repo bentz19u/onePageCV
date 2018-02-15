@@ -1,0 +1,138 @@
+#monNav {
+	background-color: rgba(54,54,54);
+	height:50px;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	position:fixed;
+}
+
+#listLien{
+	height:100%;
+	width:100%;
+}
+
+#listLien>a {
+	float: left;
+	display: flex;
+	color: #f2f2f2;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	height:100%;
+	min-width:100px;
+}
+
+#listLien a:hover {
+	background-color: #F03434;
+	color: white;
+	border-radius:4px;
+}
+
+#listLien a p{
+	margin:auto;
+	opacity:1.0;
+}
+
+#listLien>a:not(:first-child) {
+	display: none;
+}
+
+#listLien>a.icon {
+	float: right;
+	display: flex;
+}
+
+.active {
+	background-color: #F03434;
+	color: white;
+	border-radius:4px;
+}
+
+/*RESPONSIVE*/
+
+#monNav.responsive{
+	height:auto;
+}
+
+#monNav.responsive #listLien {
+	position: relative;
+}
+
+#monNav.responsive #listLien .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height:50px;
+}
+#monNav.responsive #listLien>a:not(.icon) {
+	float: none;
+	display: flex;
+	flex-wrap:wrap;
+	text-align: left;
+	width:100%;
+	height:50px;
+}
+
+#monNav.responsive #listLien #langue{
+	display:none;
+}
+
+#monNav.responsive #listLien>a:not(.icon) p{
+	margin:0;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+/* FIN RESPONSIVE */
+
+#langue{
+	display:flex;
+	height:100%;
+	width:100px;
+}
+
+#langue a{
+	display:flex;
+	width:50%;
+	color: #f2f2f2;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	box-sizing: border-box;
+	text-align:center;
+}
+
+#langue a p{
+	margin:auto;
+}
+
+#myName{
+	display:none;
+	height:100%;
+	font-size:1.8em;
+	color: #f2f2f2;
+	width:200px;
+	margin-right:20px;
+}
+
+#myName p{
+	margin:auto;
+}
+
+@media screen and (min-width: 768px) {
+	#monNav{
+		height:100px;
+		background-color: rgba(54,54,54,0.5);
+	}
+	#listLien>a:not(:first-child){
+		display:flex;
+	}
+	#listLien>a#icon {
+		display: none;
+	}
+	#myName{
+		display:flex;
+	}
+
+}
