@@ -24,7 +24,7 @@ $formations = $mapper->getFormations();
         <link rel="stylesheet" type="text/css" href="src/css/general.css" media="all"/>
     </head>
     <body>
-        <?php include "src/navBar.html";?>
+        <?php include "src/french/navBar.html";?>
         <div id="body">
             <div id="title">
 				<div id="titleContenu">
@@ -32,8 +32,8 @@ $formations = $mapper->getFormations();
 				    <p>Hello, world! je suis un développeur Web & Logiciel</p>
 				</div>
 			</div>
-			<?php include "src/bio.html";?>
-			<?php include "src/formation.php";?>
+			<?php include "src/french/bio.html";?>
+			<?php include "src/french/formation.php";?>
         </div>
     </body>
     <script type="text/javascript" src="src/js/general.js"></script>

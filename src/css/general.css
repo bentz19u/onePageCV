@@ -12,8 +12,9 @@ html{
 	display:flex;
 	min-width:100%;
 	height:100vh;
-	background-color: #363636;
-	color:white;
+	background-image: url("../../src/img/accueil1.jpg");
+	//background-color: #363636;
+	color:black;
 }
 
 #titleContenu{
