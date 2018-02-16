@@ -1,8 +1,15 @@
-function myFunction() {
-    var x = document.getElementById("monNav");
-    if (x.className === "menuHide") {
-        x.className = "responsive";
+function checkMenu() {
+    let monNav = document.getElementById("monNav");
+    if (monNav.className === "menuHide") {
+        monNav.className = "responsive";
     } else {
-        x.className = "menuHide";
+        monNav.className = "menuHide";
     }
 }
+
+function onSizeChange() {
+	let monNav = document.getElementById("monNav");
+	monNav.className = "menuHide";
+}
+
+window.onresize = onSizeChange;

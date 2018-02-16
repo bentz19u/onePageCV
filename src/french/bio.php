@@ -45,7 +45,13 @@
     </div>
     <hr>
     <div id="text">
-        Nam quibusdam, quos audio sapientes habitos in Graecia, placuisse opinor mirabilia quaedam (sed nihil est quod illi non persequantur argutiis): partim fugiendas esse nimias amicitias, ne necesse sit unum sollicitum esse pro pluribus; satis superque esse sibi suarum cuique rerum, alienis nimis implicari molestum esse; commodissimum esse quam laxissimas habenas habere amicitiae, quas vel adducas, cum velis, vel remittas; caput enim esse ad beate vivendum securitatem, qua frui non possit animus, si tamquam parturiat unus pro pluribus.
+            Bienvenue ! Je m'appelle Daniel et ceci est mon histoire.<br>
+        Au commencement, je m'étais orienté vers les sciences de la biologie et de la microbiologie.<br>
+        Cependant, après avoir connu la vie professionelle, je me suis vite rendu compte que cela ne me correspondait pas.<br><br>
+        J'ai donc décidé de me reconvertir professionnellement et je suis partie vers mon second amour, l'informatique !<br>
+        J'aime la stimulation que procure le faite de produire du code propre et structuré ainsi que la satisfaction quand tout fonctionne.<br><br>
+        Par la suite, j'ai travaillé environ 6 ans dans une société développant des logiciels pour les hôpitaux.<br>
+        Actuellement, pour compléter mes connaissances, je prépare une licence informatique en développement web et je recherche un stage de fin d'études dans ce domaine.
     </div>
     <div id="button">
         <a class="button" href="/contact"><p>Me contacter</p></a>
