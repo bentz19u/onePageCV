@@ -1,4 +1,4 @@
-<div id="contenu">
+<div class="contenu">
     <h2>Formation</h2>
     <hr>
     <?php

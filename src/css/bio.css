@@ -1,0 +1,46 @@
+#contenuBio{
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	margin:auto;
+	background-color:#DDDDDD;
+	padding-bottom:20px;
+}
+
+#text{
+	width:95%;
+	display:block;
+	margin:auto;
+}
+
+#console{
+	background-color: #383737;
+	color:#FAFAFA;
+	border-radius:10px;
+	width:100%;
+	display:flex;
+	margin:auto;
+}
+
+#code{
+	width:85%;
+	margin:auto;
+}
+
+#code a{
+	color: #209CEE;
+	text-decoration: none;
+}
+
+#contenuBio hr{
+	border-top: 1px solid #209CEC;
+}
+
+@media screen and (min-width: 768px) {
+	#text{
+		width:50%;
+	}
+	#console{
+		width:50%;
+	}
+}

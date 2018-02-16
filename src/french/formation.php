@@ -1,10 +1,10 @@
-<div id="contenu">
+<div class="contenu">
     <h2>Formation</h2>
     <hr>
     <?php
         foreach($formations as $formation){
     ?>
-        <div class="contenuFormation">
+        <div id="contenuFormation">
             <div class="contenuGauche">
                 <h3><?=$formation->getNom(); ?></h3>
                 <p><i><?=$formation->getDate(); ?></i></p>

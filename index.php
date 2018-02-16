@@ -32,7 +32,7 @@ $formations = $mapper->getFormations();
 				    <p>Hello, world! je suis un développeur Web & Logiciel</p>
 				</div>
 			</div>
-			<?php include "src/french/bio.html";?>
+			<?php include "src/french/bio.php";?>
 			<?php include "src/french/formation.php";?>
         </div>
     </body>
