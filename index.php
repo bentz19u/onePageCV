@@ -1,13 +1,5 @@
 <?php
 
-session_start();
-
-if(isset($_POST["lang"])){
-	$_SESSION["lang"] = $_POST["lang"];
-}else{
-	$_SESSION["lang"] = "Fr";
-}
-
 require __DIR__ . '/vendor/autoload.php';
 
 $db = parse_ini_file("conf/conf.ini");
@@ -18,7 +10,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 $mapper = new FormationMapper($pdo);
-$formations = $mapper->getFormations();
+$formations = $mapper->getFormations('Francais');
 
 ?>
 
@@ -37,7 +29,7 @@ $formations = $mapper->getFormations();
             <div id="title">
 				<div id="titleContenu">
 				    <h1>Daniel Bentz</h1>
-				    <p>Hello, world! je suis un développeur Web & Logiciel</p>
+				    <p>Hello, world! je suis un développeur web & logiciel</p>
 				</div>
 			</div>
 			<?php 

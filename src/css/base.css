@@ -91,6 +91,10 @@ a.button:hover{
 	background-color: #045FB4;
 }
 
+.contenu{
+	width:100%;
+}
+
 .contenu h2{
 	width:80%;
 	text-align: center;

@@ -10,7 +10,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 $mapper = new FormationMapper($pdo);
-$formations = $mapper->getFormations();
+$formations = $mapper->getFormations('Anglais');
 
 ?>
 
@@ -29,7 +29,7 @@ $formations = $mapper->getFormations();
             <div id="title">
 				<div id="titleContenu">
 				    <h1>Daniel Bentz</h1>
-				    <p>Hello, world! i am a Web developer & Logiciel</p>
+				    <p>Hello, world! I am a web & logiciel developer</p>
 				</div>
 			</div>
 			<?php 
