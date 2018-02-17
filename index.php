@@ -2,6 +2,7 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
+//connexion à la base de données
 $db = parse_ini_file("conf/conf.ini");
 
 $pdo = new PDO('mysql:host=' . $db['host'] . ';dbname=' . $db['database'],
@@ -9,8 +10,13 @@ $pdo = new PDO('mysql:host=' . $db['host'] . ';dbname=' . $db['database'],
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
+//Récupération des formations
 $mapper = new FormationMapper($pdo);
 $formations = $mapper->getFormations('Francais');
+
+//Récupération de l'expériences
+$mapper = new ExperienceMapper($pdo);
+$experiences = $mapper->getExperiences('Francais');
 
 ?>
 
@@ -35,6 +41,7 @@ $formations = $mapper->getFormations('Francais');
 			<?php 
 				include "src/french/bio.html";
 				include "src/french/formation.php";
+				include "src/french/experience.php";
 			?>
         </div>
         <script type="text/javascript" src="src/js/jquery-3.3.1.min.js"></script>

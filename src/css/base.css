@@ -91,6 +91,18 @@ a.button:hover{
 	background-color: #045FB4;
 }
 
+.contenu:nth-child(even){
+	background-color: #dddddd;
+}
+
+.contenu:nth-child(even) hr{
+	border-top: 1px solid #209CEC;
+}
+
+.contenu:nth-child(odd){
+	background-color: white;
+}
+
 .contenu{
 	width:100%;
 }
