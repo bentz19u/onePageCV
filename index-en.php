@@ -1,13 +1,5 @@
 <?php
 
-session_start();
-
-if(isset($_POST["lang"])){
-	$_SESSION["lang"] = $_POST["lang"];
-}else{
-	$_SESSION["lang"] = "Fr";
-}
-
 require __DIR__ . '/vendor/autoload.php';
 
 $db = parse_ini_file("conf/conf.ini");
@@ -26,23 +18,23 @@ $formations = $mapper->getFormations();
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>monCV</title>
+        <title>Daniel Bentz</title>
         <link rel="stylesheet" type="text/css" href="src/css/reset.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/navBar.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/general.css" media="all"/>
     </head>
     <body>
-        <?php include "src/french/navBar.html";?>
+        <?php include "src/english/navBar.html";?>
         <div id="body">
             <div id="title">
 				<div id="titleContenu">
 				    <h1>Daniel Bentz</h1>
-				    <p>Hello, world! je suis un développeur Web & Logiciel</p>
+				    <p>Hello, world! i am a Web developer & Logiciel</p>
 				</div>
 			</div>
 			<?php 
-				include "src/french/bio.html";
-				include "src/french/formation.php";
+				include "src/english/bio.html";
+				include "src/english/formation.php";
 			?>
         </div>
         <script type="text/javascript" src="src/js/jquery-3.3.1.min.js"></script>
