@@ -42,6 +42,7 @@ $experiences = $mapper->getExperiences('Anglais');
 				include "src/english/bio.html";
 				include "src/english/formation.php";
 				include "src/english/experience.php";
+				include "src/english/competence.php";
 			?>
         </div>
         <script type="text/javascript" src="src/js/jquery-3.3.1.min.js"></script>
