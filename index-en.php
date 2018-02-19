@@ -21,10 +21,12 @@ $experiences = $mapper->getExperiences('Anglais');
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <title>Daniel Bentz</title>
+        <meta name="description" content="I am Daniel Bentz, web & software developer - interactive resume" />
+        <meta name="keywords" content="Daniel Bentz, resume, PHP programmer, PHP, MySQL, OOP, Nancy, French" />
         <link rel="stylesheet" type="text/css" href="src/css/reset.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/navBar.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/general.css" media="all"/>
@@ -45,7 +47,7 @@ $experiences = $mapper->getExperiences('Anglais');
 				include "src/english/competence.php";
 			?>
         </div>
-        <script type="text/javascript" src="src/js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="src/js/general.js"></script>
+        <script src="src/js/jquery-3.3.1.min.js"></script>
+        <script src="src/js/general.js"></script>
     </body>
 </html>
