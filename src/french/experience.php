@@ -1,4 +1,4 @@
-<div class="contenu">
+<div id="contenuExp" class="contenu">
     <h2>Expériences</h2>
     <hr>
     <?php
