@@ -16,9 +16,15 @@ class CompetenceMapper extends Mapper {
     }
 
     //retourne la liste de toutes les compétences
-	public function getCompetences() {
-        $sql = "SELECT *
-            	FROM competence";
+	public function getCompetences($langue) {
+        $sql = "SELECT competence.*, groupecompetence.nom AS groupe
+            	FROM competence, groupecompetence                
+                WHERE exists ( SELECT 1 
+                                FROM langue 
+                                WHERE (competence.id_langue = langue.id 
+                                        and langue.nom = '".$langue."'))
+                AND competence.id_groupe = groupecompetence.id
+                ORDER BY competence.id_groupe";
         $stmt = $this->db->query($sql);
         $results = [];
         while($row = $stmt->fetch()) {

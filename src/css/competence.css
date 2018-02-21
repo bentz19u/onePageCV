@@ -1,0 +1,38 @@
+.groupeCompe{
+	width:80%;
+	display:flex;
+	margin:auto;
+	margin-top:10px;
+	flex-wrap: wrap;
+}
+
+.groupeCompe .grille{
+	display:flex;
+	width:90%;
+	margin-right:5%;
+	margin-left:5%;
+	margin-top:10px;
+	border:1px #209CEE solid;
+	padding:10px;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.grille p{
+	margin:auto;
+}
+
+@media screen and (min-width: 768px) {
+	.groupeCompe{
+		width:50%;
+	}
+
+	.groupeCompe .grille{
+		width:20%;
+		margin-right:2.5%;
+		margin-left:2.5%;
+		margin-top:10px;
+	}
+
+}

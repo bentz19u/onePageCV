@@ -18,6 +18,11 @@ $formations = $mapper->getFormations('Francais');
 $mapper = new ExperienceMapper($pdo);
 $experiences = $mapper->getExperiences('Francais');
 
+//Récupération des compétences
+$mapper = new CompetenceMapper($pdo);
+$competences = $mapper->getCompetences('Francais');
+
+
 ?>
 
 <!DOCTYPE html>

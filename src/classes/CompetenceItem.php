@@ -5,6 +5,7 @@ class CompetenceItem{
 	protected $id;
 	protected $nom;
 	protected $link;
+	protected $groupe;
 
 	public function __construct(array $data){
 		if(isset($data['id'])) {
@@ -12,6 +13,7 @@ class CompetenceItem{
         }
         $this->nom = $data['nom'];
         $this->link = $data['link'];
+        $this->groupe = $data['groupe'];
 	}
 
 	public function getId() {
@@ -22,5 +24,8 @@ class CompetenceItem{
     }
     public function getLink() {
         return $this->link;
+    }
+    public function getGroupe() {
+        return $this->groupe;
     }
 }
