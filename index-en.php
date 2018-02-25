@@ -17,6 +17,10 @@ $formations = $mapper->getFormations('Anglais');
 $mapper = new ExperienceMapper($pdo);
 $experiences = $mapper->getExperiences('Anglais');
 
+//Récupération des compétences
+$mapper = new CompetenceMapper($pdo);
+$competences = $mapper->getCompetences('Anglais');
+
 
 ?>
 
@@ -27,6 +31,7 @@ $experiences = $mapper->getExperiences('Anglais');
         <title>Daniel Bentz</title>
         <meta name="description" content="I am Daniel Bentz, web & software developer - interactive resume" />
         <meta name="keywords" content="Daniel Bentz, resume, PHP programmer, PHP, MySQL, OOP, Nancy, French" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="src/css/reset.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/navBar.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/general.css" media="all"/>

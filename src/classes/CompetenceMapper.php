@@ -17,7 +17,7 @@ class CompetenceMapper extends Mapper {
 
     //retourne la liste de toutes les compétences
 	public function getCompetences($langue) {
-        $sql = "SELECT competence.*, groupecompetence.nom AS groupe
+        $sql = "SELECT competence.*, groupecompetence.nom AS groupe, groupecompetence.nom_en AS groupeEn
             	FROM competence, groupecompetence                
                 WHERE exists ( SELECT 1 
                                 FROM langue 

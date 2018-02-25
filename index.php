@@ -32,6 +32,7 @@ $competences = $mapper->getCompetences('Francais');
         <title>Daniel Bentz</title>
         <meta name="description" content="Je m'appelle Daniel Bentz, je suis développeur web & logiciel - CV intéractif" />
         <meta name="keywords" content="Daniel Bentz, CV, développeur PHP, PHP, MySQL, POO, Nancy, Francais" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="src/css/reset.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/navBar.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/general.css" media="all"/>
