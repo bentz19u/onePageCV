@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require('../vendor/autoload.php');
 
-$db = parse_ini_file("conf/conf.ini");
+$db = parse_ini_file("../conf/conf.ini");
 
 $pdo = new PDO('mysql:host=' . $db['host'] . ';dbname=' . $db['database'],
     $db['username'], $db['password'], array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
@@ -32,12 +32,12 @@ $competences = $mapper->getCompetences('Anglais');
         <meta name="description" content="I am Daniel Bentz, web & software developer - interactive resume" />
         <meta name="keywords" content="Daniel Bentz, resume, PHP programmer, PHP, MySQL, OOP, Nancy, French" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="src/css/reset.css" media="all"/>
-        <link rel="stylesheet" type="text/css" href="src/css/navBar.css" media="all"/>
-        <link rel="stylesheet" type="text/css" href="src/css/general.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="../src/css/reset.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="../src/css/navBar.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="../src/css/general.css" media="all"/>
     </head>
     <body>
-        <?php include "src/english/navBar.html";?>
+        <?php include "../src/english/navBar.html";?>
         <div id="body">
             <div id="title">
 				<div id="titleContenu">
@@ -46,15 +46,15 @@ $competences = $mapper->getCompetences('Anglais');
 				</div>
 			</div>
 			<?php 
-				include "src/english/bio.html";
-				include "src/english/formation.php";
-				include "src/english/experience.php";
-				include "src/english/competence.php";
-				include "src/english/realisation.php";
-				include "src/english/contact.php";
+				include "../src/english/bio.html";
+				include "../src/english/formation.php";
+				include "../src/english/experience.php";
+				include "../src/english/competence.php";
+				include "../src/english/realisation.php";
+				include "../src/english/contact.php";
 			?>
         </div>
-        <script src="src/js/jquery-3.3.1.min.js"></script>
-        <script src="src/js/general.js"></script>
+        <script src="../src/js/jquery-3.3.1.min.js"></script>
+        <script src="../src/js/general.js"></script>
     </body>
 </html>
