@@ -14,7 +14,7 @@ html{
 	min-width:100%;
 	height:100vh;
 	background-image: url("../../src/img/accueil1.jpg");
-	//background-color: #363636;
+	background-color: #363636;
 	color:black;
 }
 
@@ -27,11 +27,14 @@ html{
 	text-align: center;
 	font-size: 2em;
 	width:100%;
+	font-family: Promesh;
+	color:white;
 }
 
 #titleContenu p{
 	text-align: center;
 	font-style: italic;
+	color:white;
 }
 
 #text{
@@ -91,15 +94,15 @@ a.button:hover{
 	background-color: #045FB4;
 }
 
-.contenu:nth-child(even){
+.contenu:nth-child(odd){
 	background-color: #dddddd;
 }
 
-.contenu:nth-child(even) hr{
+.contenu:nth-child(odd) hr{
 	border-top: 1px solid #209CEC;
 }
 
-.contenu:nth-child(odd){
+.contenu:nth-child(even){
 	background-color: white;
 }
 
@@ -134,7 +137,7 @@ a.button:hover{
 	}
 	#titleContenu{
 		margin-top: auto;
-		background-color: rgba(54,54,54,0.2);
+		background-color: rgba(54,54,54,0.5);
 		border-radius: 15px 50px;
 		padding:20px;
 	}
