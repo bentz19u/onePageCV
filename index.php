@@ -55,6 +55,7 @@ $competences = $mapper->getCompetences('Francais');
 				include "src/french/contact.php";
 			?>
         </div>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script src="src/js/jquery-3.3.1.min.js"></script>
         <script src="src/js/general.js"></script>
     </body>
