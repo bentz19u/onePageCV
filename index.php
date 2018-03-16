@@ -22,6 +22,10 @@ $experiences = $mapper->getExperiences('Francais');
 $mapper = new CompetenceMapper($pdo);
 $competences = $mapper->getCompetences('Francais');
 
+//Récupération des projets
+$mapper = new ProjetMapper($pdo);
+$projets = $mapper->getProjets('Francais');
+
 
 ?>
 
@@ -43,7 +47,7 @@ $competences = $mapper->getCompetences('Francais');
             <div id="title">
 				<div id="titleContenu">
 				    <h1>Daniel Bentz</h1>
-				    <p>Hello, world! je suis un développeur web & logiciel</p>
+				    <p>Hello, world! Je suis un développeur web & logiciel</p>
 				</div>
 			</div>
 			<?php 

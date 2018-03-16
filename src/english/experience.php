@@ -10,7 +10,7 @@
                 <p><i><?=$experience->getDate(); ?></i></p>
             </div>
             <div class="contenuDroit">
-                <h3><img src="src/img/if_Map-Marker-Push-Pin--Left-Azure_73056.png" alt="marker"><?=$experience->getLieu(); ?></h3>
+                <h3><img src="../src/img/if_Map-Marker-Push-Pin--Left-Azure_73056.png" alt="marker"><?=$experience->getLieu(); ?></h3>
                 <div class="text"><?=nl2br($experience->getDescriptionCourt()); ?></div>
                 <div class="textLong"><?=nl2br($experience->getDescription()); ?></div>
             </div>
