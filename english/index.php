@@ -21,6 +21,9 @@ $experiences = $mapper->getExperiences('Anglais');
 $mapper = new CompetenceMapper($pdo);
 $competences = $mapper->getCompetences('Anglais');
 
+//Récupération des compétences
+$mapper = new ProjetMapper($pdo);
+$projets = $mapper->getProjets();
 
 ?>
 

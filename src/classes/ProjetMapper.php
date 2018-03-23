@@ -2,14 +2,10 @@
 
 class ProjetMapper extends Mapper {
 
-	//retourne la liste de toutes les formations
-	public function getProjets($langue) {
+	//retourne la liste de tous les projets
+	public function getProjets() {
         $sql = "SELECT *
-            	FROM projet
-                WHERE exists ( SELECT 1 
-                                FROM langue 
-                                WHERE (projet.id_langue = langue.id 
-                                        and langue.nom = '".$langue."'))";
+            	FROM projet";
         $stmt = $this->db->query($sql);
         $results = [];
         while($row = $stmt->fetch()) {

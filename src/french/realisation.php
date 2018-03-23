@@ -7,11 +7,18 @@
 	    ?>
 	    <div class="realisation">
 	    	<img src="src/img/<?=$projet->getLienImage();?>">
-	    	<p>
+	    	<div class="middle">
 	    		<span class="bold"><?=$projet->getNom();?></span>
 	    		<?=$projet->getDescription();?>
-	    	</p>
-	    	<a href="<?=$projet->getLienGIT();?>">Lien GITHub</a>
+	    	</div>
+	    	<div class="bottom">
+	    		<p class="tag">
+		    		<?=$projet->getTag();?>
+		    	</p>
+	    		<a class="github button" target="_blank" href="<?=$projet->getLienGIT();?>">
+	    			<p>Voir sur GitHub</p>
+	    		</a>
+	    	</div>
 	    </div>
 	    <?php
 	    }

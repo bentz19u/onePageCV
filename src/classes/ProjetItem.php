@@ -7,6 +7,8 @@ class ProjetItem{
 	protected $lienImage;
 	protected $lienGITHub;
 	protected $description;
+    protected $descriptionEn;
+    protected $tag;
 
 	public function __construct(array $data){
 		if(isset($data['id'])) {
@@ -16,6 +18,8 @@ class ProjetItem{
         $this->lienImage = $data['lien_image'];
         $this->lienGITHub = $data['lien_github'];
         $this->description = $data['description'];
+        $this->descriptionEn = $data['description_en'];
+        $this->tag = $data['tag'];
 	}
 
 	public function getId() {
@@ -27,10 +31,16 @@ class ProjetItem{
     public function getDescription() {
         return $this->description;
     }
+    public function getDescriptionEn() {
+        return $this->descriptionEn;
+    }
     public function getLienImage() {
         return $this->lienImage;
     }
     public function getLienGIT() {
         return $this->lienGITHub;
+    }
+    public function getTag() {
+        return $this->tag;
     }
 }

@@ -3,8 +3,10 @@ window.sr = ScrollReveal();
 
 sr.reveal('#console');
 sr.reveal('#text');
+sr.reveal('#button');
 sr.reveal('.contenuEduXP');
 sr.reveal('.groupeCompe');
+sr.reveal('.realisation');
 
 //functions pour le menu
 function checkMenu() {

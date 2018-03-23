@@ -40,6 +40,7 @@ $projets = $mapper->getProjets('Francais');
         <link rel="stylesheet" type="text/css" href="src/css/reset.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/navBar.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="src/css/general.css" media="all"/>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
     </head>
     <body>
         <?php include "src/french/navBar.html";?>
