@@ -5,11 +5,11 @@
     <form id="form">
     	<label for="form-nom">What is your name?</label>
     	<input id="form-nom" type="text" placeholder="Name" required="required">
-    	<label for="form-mail">How can I reply back?</label>
+    	<label for="form-mail">How can I reply back to you?</label>
     	<input id="form-mail" type="email" placeholder="E-mail" required="required">
     	<label for="form-telephone">Maybe a phone number?</label>
     	<input id="form-telephone" type="text" placeholder="Phone number">
-    	<label for="form-contenu">Let me a message</label>
+    	<label for="form-contenu">Leave me a message</label>
     	<textarea id="form-contenu" type="text" placeholder="Free content" cols="60" rows="5" required="required"></textarea>
     	<input id="form-submit" class="button" type="submit" value="Send Message">
     </form>
