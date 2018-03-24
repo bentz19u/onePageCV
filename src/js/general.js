@@ -87,8 +87,11 @@ document.getElementById("form-submit").addEventListener("click", function(event)
 
 		let urlOrigine = window.location.href;
 		let url = 'mail.php';
-		if(urlOrigine.search("english")){
+		let langue = 'fr';
+		if(urlOrigine.search("english") != -1){
+			console.log('english');
 			url = '../mail.php';
+			langue = 'en';
 		}
 
 		//envoie du mail dans la requete ajax
@@ -98,12 +101,20 @@ document.getElementById("form-submit").addEventListener("click", function(event)
 			data: params
 		})
 		.then(function (response) {
-			divMessage.innerHTML = "Message envoyé";
+			if(langue == 'fr'){
+				divMessage.innerHTML = "Message envoyé";
+			}else if(langue == 'en'){
+				divMessage.innerHTML = "Message sent";
+			}
 			divMessage.classList.remove("hidden");
 			divMessage.classList.add("message-ok");
 		})
 		.catch(function (error) {
-		  	divMessage.innerHTML = "Erreur pendant l'envoie du message";
+		  	if(langue == 'fr'){
+				divMessage.innerHTML = "Erreur pendant l'envoie du message";
+			}else if(langue == 'en'){
+				divMessage.innerHTML = "Error occurred while sending the message";
+			}
 		  	divMessage.classList.remove("hidden");
 			divMessage.classList.add("message-error");
 		});
