@@ -42,7 +42,7 @@ $projets = $mapper->getProjets('Francais');
         <link rel="stylesheet" type="text/css" href="src/css/general.css" media="all"/>
         <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
     </head>
-    <body>
+    <body id="body">
         <?php include "src/french/navBar.html";?>
         <div id="body">
             <div id="title">
@@ -63,5 +63,7 @@ $projets = $mapper->getProjets('Francais');
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script src="src/js/jquery-3.3.1.min.js"></script>
         <script src="src/js/general.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </body>
 </html>

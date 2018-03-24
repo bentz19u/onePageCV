@@ -38,8 +38,9 @@ $projets = $mapper->getProjets();
         <link rel="stylesheet" type="text/css" href="../src/css/reset.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="../src/css/navBar.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="../src/css/general.css" media="all"/>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     </head>
-    <body>
+    <body id="body">
         <?php include "../src/english/navBar.html";?>
         <div id="body">
             <div id="title">
@@ -57,7 +58,9 @@ $projets = $mapper->getProjets();
 				include "../src/english/contact.php";
 			?>
         </div>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script src="../src/js/jquery-3.3.1.min.js"></script>
         <script src="../src/js/general.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </body>
 </html>

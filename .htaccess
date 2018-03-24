@@ -1,0 +1,7 @@
+<Files "\.(ini|sql)$">
+	Order allow,deny
+	Allow from 127.0.0.1
+    Deny from all
+</Files>
+
+Options -Indexes

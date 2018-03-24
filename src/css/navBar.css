@@ -5,6 +5,7 @@
 	display:flex;
 	justify-content: space-between;
 	position:fixed;
+	z-index:1;
 }
 
 #listLien{
@@ -124,7 +125,6 @@
 	#monNav{
 		height:100px;
 		background-color: rgba(54,54,54,0.5);
-		z-index:10;
 	}
 	#listLien>a:not(:first-child){
 		display:flex;
