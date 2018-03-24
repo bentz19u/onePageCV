@@ -43,6 +43,7 @@ document.getElementById("form-submit").addEventListener("click", function(event)
     divMessage.classList.add("hidden");
     divMessage.classList.remove("message-ok");
     divMessage.classList.remove("message-error");
+    divMessage.innerHTML = "";
 
     //Vérification des champs
     let nom = nomElement.value;
