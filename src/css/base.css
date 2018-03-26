@@ -15,13 +15,16 @@ html, input, textarea{
 	min-width:100%;
 	height:100vh;
 	background-color: #363636;
-	background:no-repeat center right fixed url(../../src/img/accueil1.jpg);
+	background:no-repeat center right fixed url(../../src/img/acceuil_min.jpg);
 	color:black;
 }
 
 #titleContenu{
 	margin:auto;
 	margin-top:40%;
+	background-color: rgba(54,54,54,0.5);
+	border-radius: 15px 50px;
+	padding:20px;
 }
 
 #titleContenu h1{
@@ -137,11 +140,12 @@ a, .button{
 		font-size:1.7em;
 	}
 
+	#title{
+		background:no-repeat center right fixed url(../../src/img/accueil1.jpg);
+	}
+
 	#titleContenu{
 		margin-top: auto;
-		background-color: rgba(54,54,54,0.5);
-		border-radius: 15px 50px;
-		padding:20px;
 	}
 
 	#titleContenu h1{

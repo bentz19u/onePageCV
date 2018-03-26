@@ -10,7 +10,7 @@
     	<label for="form-telephone">Un numéro de téléphone peux-être?</label>
     	<input id="form-telephone" type="text" placeholder="Numéro de téléphone">
     	<label for="form-contenu">Une petite note?</label>
-    	<textarea id="form-contenu" type="text" placeholder="Contenu libre" cols="60" rows="5" required="required"></textarea>
+    	<textarea id="form-contenu" placeholder="Contenu libre" cols="60" rows="5" required="required"></textarea>
     	<input id="form-submit" class="button" type="submit" value="Envoyer">
     </form>
     <hr>

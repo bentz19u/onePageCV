@@ -40,7 +40,7 @@ $projets = $mapper->getProjets();
         <link rel="stylesheet" type="text/css" href="../src/css/general.css" media="all"/>
         <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     </head>
-    <body id="body">
+    <body>
         <?php include "../src/english/navBar.html";?>
         <div id="body">
             <div id="title">

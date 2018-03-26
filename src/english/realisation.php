@@ -6,7 +6,7 @@
 	    foreach($projets as $projet){
 	    ?>
 	    <div class="realisation">
-	    	<img src="../src/img/<?=$projet->getLienImage();?>">
+	    	<img alt="<?=$projet->getLienImage();?>" src="../src/img/<?=$projet->getLienImage();?>">
 	    	<div class="middle">
 	    		<span class="bold"><?=$projet->getNom();?></span>
 	    		<?=$projet->getDescriptionEn();?>
