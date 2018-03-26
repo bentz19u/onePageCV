@@ -1,5 +1,5 @@
 <div id="contenuRealisation" class="contenu">
-    <h2>Projects</h2>
+    <h2>Project</h2>
     <hr>
     <div>
 	    <?php

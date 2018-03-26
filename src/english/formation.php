@@ -1,5 +1,5 @@
 <div id="contenuForm" class="contenu">
-    <h2>Educations</h2>
+    <h2>Education</h2>
     <hr>
     <?php
         foreach($formations as $formation){

@@ -1,5 +1,5 @@
 <div id="contenuExp" class="contenu">
-    <h2>Experiences</h2>
+    <h2>Experience</h2>
     <hr>
     <?php
         foreach($experiences as $experience){
