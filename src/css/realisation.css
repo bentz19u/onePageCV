@@ -62,7 +62,7 @@
 	width:100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 	#contenuRealisation>div{
 		width:50%;
 	}

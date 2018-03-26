@@ -128,7 +128,7 @@ a, .button{
 	font-style: italic;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 	html, input, textarea{
 		font-size:18px;
 	}

@@ -46,7 +46,7 @@
 	margin:auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 	.contenuEduXP{
 		width:50%;
 		flex-wrap: unset;
