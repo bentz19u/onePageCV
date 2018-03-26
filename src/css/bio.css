@@ -35,7 +35,16 @@
 	border-top: 1px solid #209CEC;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+	#text{
+		width:80%;
+	}
+	#console{
+		width:80%;
+	}
+}
+
+@media screen and (min-width: 1281px) {
 	#text{
 		width:50%;
 	}

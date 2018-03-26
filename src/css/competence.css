@@ -22,9 +22,9 @@
 	margin:auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.groupeCompe{
-		width:50%;
+		width:80%;
 	}
 
 	.groupeCompe .grille{
@@ -33,5 +33,10 @@
 		margin-left:2.5%;
 		margin-top:10px;
 	}
+}
 
+@media screen and (min-width: 1281px) {
+	.groupeCompe{
+		width:50%;
+	}
 }

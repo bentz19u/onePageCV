@@ -121,7 +121,7 @@
 	margin:auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1281px) {
 	#monNav{
 		height:100px;
 		background-color: rgba(54,54,54,0.5);

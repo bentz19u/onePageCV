@@ -66,17 +66,23 @@ form .button{
 	color: black;
 }
 
-@media screen and (min-width: 1024px) {
-	form{
-		width:50%;
-	}
-
+@media screen and (min-width: 768px) {	
 	form input{
 		max-width:200px;
 	}
 
 	form input[type='submit']{
 		width:20%;
+	}
+
+	#listContact{
+		margin-bottom:100px;
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	form{
+		width:50%;
 	}
 
 	#message{

@@ -128,7 +128,42 @@ a, .button{
 	font-style: italic;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+	html, input, textarea{
+		font-size:16px;
+	}
+
+	.contenu h2{
+		font-size:1.7em;
+	}
+
+	#titleContenu{
+		margin-top: auto;
+		background-color: rgba(54,54,54,0.5);
+		border-radius: 15px 50px;
+		padding:20px;
+	}
+
+	#titleContenu h1{
+		font-size: 5em;
+		margin-bottom:10px;
+	}
+
+	#button{
+		width:60%;
+	}
+
+	a.button{
+		margin-top:50px;
+		min-width:20%;
+	}
+
+	hr{
+		width:80%;
+	}
+}
+
+@media screen and (min-width: 1281px) {
 	html, input, textarea{
 		font-size:18px;
 	}
@@ -140,22 +175,11 @@ a, .button{
 
 	#titleContenu{
 		margin-top: auto;
-		background-color: rgba(54,54,54,0.5);
-		border-radius: 15px 50px;
-		padding:20px;
 	}
 
 	#titleContenu h1{
 		font-size: 6em;
-	}
-
-	#button{
-		width:60%;
-	}
-
-	a.button{
-		margin-top:50px;
-		min-width:20%;
+		margin-bottom: 0px;
 	}
 
 	hr{
