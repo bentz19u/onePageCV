@@ -8,7 +8,7 @@
     	<input id="form-nom" type="text" placeholder="이름" required="required">
     	<label for="form-mail">대답을 어떻게 보내줄 수 있습니까?</label>
     	<input id="form-mail" type="email" placeholder="메일" required="required">
-    	<label for="form-telephone">혹시 전화번호 있습니까?</label>
+    	<label for="form-telephone">혹시 전화번호가 있습니까?</label>
     	<input id="form-telephone" type="text" placeholder="전화번호">
     	<label for="form-contenu">메시지를 써주세요</label>
     	<textarea id="form-contenu" placeholder="자유 콘텐츠" cols="60" rows="5" required="required"></textarea>
