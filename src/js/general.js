@@ -101,6 +101,11 @@ document.getElementById("form-submit").addEventListener("click", function(event)
 			url = '../mail.php';
 			langue = 'en';
 		}
+		else if(urlOrigine.search("korean") != -1){
+			console.log('korean');
+			url = '../mail.php';
+			langue = 'kr';
+		}
 
 		//envoie du mail dans la requete ajax
 		axios({
@@ -113,6 +118,8 @@ document.getElementById("form-submit").addEventListener("click", function(event)
 				divMessage.innerHTML = "Message envoyé";
 			}else if(langue == 'en'){
 				divMessage.innerHTML = "Message sent";
+			}else if(langue == 'kr'){
+				divMessage.innerHTML = "메시지를 보냈습니다";
 			}
 			divMessage.classList.remove("hidden");
 			divMessage.classList.add("message-ok");
@@ -122,9 +129,12 @@ document.getElementById("form-submit").addEventListener("click", function(event)
 				divMessage.innerHTML = "Erreur pendant l'envoie du message";
 			}else if(langue == 'en'){
 				divMessage.innerHTML = "Error occurred while sending the message";
+			}else if(langue == 'kr'){
+				divMessage.innerHTML = "메시지를 보내면서 에러가 났습니다";
 			}
 		  	divMessage.classList.remove("hidden");
 			divMessage.classList.add("message-error");
+			console.log(error);
 		});
 	}
 }); 
