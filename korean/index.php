@@ -15,7 +15,7 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 <html lang="kr">
     <head>
         <meta charset="utf-8"/>
-        <title>Daniel Bentz</title>
+        <title>벤츠 다니엘</title>
         <meta name="description" content="저는 프랑스에 온 벤츠 다니엘입니다. 소프트웨어와 웹을 개발자입니다 - 대화식 이력서." />
         <meta name="keywords" content="Daniel Bentz, resume, PHP programmer, PHP, MySQL, OOP, Nancy, Korean, 벤츠 다니엘, 이력서" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,6 +34,10 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 				    <p>Hello, world! 저는 소프트웨어와 웹 개발자입니다</p>
 				</div>
 			</div>
+            <?php 
+                include "../src/korean/bio.html";
+                include "../src/korean/contact.php";
+            ?>
         </div>
         <div class="contenu">Coming soon.</div>
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
