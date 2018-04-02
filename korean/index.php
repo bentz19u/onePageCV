@@ -17,7 +17,7 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         <meta charset="utf-8"/>
         <title>Daniel Bentz</title>
         <meta name="description" content="저는 프랑스에 온 벤츠 다니엘입니다. 소프트웨어와 웹을 개발자입니다 - 대화식 이력서." />
-        <meta name="keywords" content="Daniel Bentz, resume, PHP programmer, PHP, MySQL, OOP, Nancy, Korean" />
+        <meta name="keywords" content="Daniel Bentz, resume, PHP programmer, PHP, MySQL, OOP, Nancy, Korean, 벤츠 다니엘, 이력서" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="../src/css/reset.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="../src/css/navBar.css" media="all"/>
@@ -31,11 +31,11 @@ $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             <div id="title">
 				<div id="titleContenu">
 				    <h1>벤츠 다니엘</h1>
-				    <p>Hello, world! 저는 소프트웨어와 웹을 개발자입니다</p>
+				    <p>Hello, world! 저는 소프트웨어와 웹 개발자입니다</p>
 				</div>
 			</div>
         </div>
-        <div class="contenu" height="500px">Coming soon.</div>
+        <div class="contenu">Coming soon.</div>
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script src="../src/js/general.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
