@@ -43,6 +43,7 @@ $projets = $mapper->getProjets();
     <body>
         <?php include "../src/english/navBar.html";?>
         <div id="body">
+            <span class="ancre"></span>
             <div id="title">
 				<div id="titleContenu">
 				    <h1>Daniel Bentz</h1>

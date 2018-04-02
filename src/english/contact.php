@@ -1,3 +1,4 @@
+<span id="contenuContactAncre" class="ancre"></span>
 <div id="contenuContact" class="contenu">
     <h2>Contact</h2>
     <hr>

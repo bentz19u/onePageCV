@@ -98,15 +98,15 @@ a, .button{
 	background-color: #045FB4;
 }
 
-.contenu:nth-child(odd){
+.contenu:nth-child(4n+2){
 	background-color: #dddddd;
 }
 
-.contenu:nth-child(odd) hr{
+.contenu:nth-child(4n+2) hr{
 	border-top: 1px solid #209CEC;
 }
 
-.contenu:nth-child(even){
+#contenu:nth-child(2n+2){
 	background-color: white;
 }
 
@@ -129,6 +129,14 @@ a, .button{
 	text-align: left;
 	display:block;
 	font-style: italic;
+}
+
+.ancre{
+	width:100%;
+	height:0px;
+	margin-top:-50px;
+	padding-top:50px;
+	display:hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -170,6 +178,11 @@ a, .button{
 @media screen and (min-width: 1281px) {
 	html, input, textarea{
 		font-size:18px;
+	}
+
+	.ancre{
+		margin-top:-100px;
+		padding-top:100px;
 	}
 
 	.contenu h2{

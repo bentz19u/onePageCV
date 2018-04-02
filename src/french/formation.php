@@ -1,3 +1,4 @@
+<span id="contenuFormAncre" class="ancre"></span>
 <div id="contenuForm" class="contenu">
     <h2>Formations</h2>
     <hr>
