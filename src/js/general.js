@@ -27,6 +27,14 @@ function onSizeChange() {
 
 window.onresize = onSizeChange;
 
+var listLien = document.getElementsByClassName("monNavLien");
+
+for (let i = 0; i < listLien.length; i++) {
+    listLien[i].addEventListener("click", function(event){
+		onSizeChange();
+	});
+}
+
 //Formulaire de contact
 
 //Récupération des champs
