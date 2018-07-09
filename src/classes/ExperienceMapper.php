@@ -9,7 +9,8 @@ class ExperienceMapper extends Mapper {
                 WHERE exists ( SELECT 1 
                                 FROM langue 
                                 WHERE (experience.id_langue = langue.id 
-                                        and langue.nom = '".$langue."'))";
+                                        and langue.nom = '".$langue."'))
+                ORDER BY ordre DESC";
         $stmt = $this->db->query($sql);
         $results = [];
         while($row = $stmt->fetch()) {
