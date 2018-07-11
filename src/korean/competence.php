@@ -1,6 +1,6 @@
 <span id="contenuCompetenceAncre" class="ancre"></span>
 <div id="contenuCompetence" class="contenu">
-    <h2>Skill</h2>
+    <h2>기술</h2>
     <hr>
 <?php
 

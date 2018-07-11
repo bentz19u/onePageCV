@@ -1,6 +1,6 @@
 <span id="contenuFormAncre" class="ancre"></span>
 <div id="contenuForm" class="contenu">
-    <h2>Education</h2>
+    <h2>학력사항</h2>
     <hr>
     <?php
         foreach($formations as $formation){
